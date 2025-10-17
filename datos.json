@@ -1,0 +1,32 @@
+[
+        {
+          "titulo": "Hábitat - Un mundo",
+          "categoria": "Diseño de producto, pantuflas",
+          "imagen": "./img/Foto 1.1.jpg"
+        },
+        {
+          "titulo": "Línea de hidratación",
+          "categoria": "Diseño de producto, petaca",
+          "imagen": "./img/Foto 2.1.jpg"
+        },
+        {
+          "titulo": "Reciclaje Textil",
+          "categoria": "Diseño textil",
+          "imagen": "./img/Foto 3.1.jpg"
+        },
+        {
+          "titulo": "Intervención Textil",
+          "categoria": "Diseño textil",
+          "imagen": "./img/Foto 4.1.jpg"
+        },
+        {
+          "titulo": "Tesoros Naturales de Chile",
+          "categoria": "Diseño de producto, botella",
+          "imagen": "./img/Foto 6.jpg"
+        },
+        {
+          "titulo": "MIDO - Domótica",
+          "categoria": "UX/UI y Branding",
+          "imagen": "./img/Foto 5.5.jpg"
+        }
+      ]

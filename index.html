@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mi portafolio con Bootstrap</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header data-bs-theme="dark">
+            <div class="collapse text-bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4>Hola!</h4>
+                            <p class="text-body-secondary">
+                                Este es mi portafolio 
+                                <p> Creo en el diseño como una forma de diálogo entre las personas, los objetos y las emociones. Cada proyecto que desarrollo nace desde la observación del entorno y la búsqueda de sentido en los detalles. 
+                                    <p>Este portafolio reúne procesos, exploraciones y resultados que representan mi manera de entender el diseño: como una herramienta para conectar ideas, transformar realidades y construir belleza con propósito.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4>Habilidades</h4>
+                            <table id="aqui" class="table table-hover table-borderless"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light"> María Josefina Castro</h1>
+                        <p class="lead text-body-secondary">
+                            Selección de proyectos de diseño: producto, UX/UI, Branding y textil. Diseño UC
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="sandunga"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-body-secondary py-5">
+            <div class="container">
+                <p class="float-end mb-1"><a href="#">Volver al comienzo</a></p>
+                <small>© 2025 Josefina Castro</small>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
+
+        <script>
+            const habilidades=[
+                {programa:"Photoshop", valor:"80"},
+                 {programa:"Illustrator", valor:"100"},
+                  {programa:"InDesign", valor:"10"},
+                   {programa:"Blender", valor:"60"},
+            ]
+            const donde = document.querySelector("#aqui");
+
+habilidades.forEach( (h) =>{
+    donde.innerHTML += `<tr>
+                        <td class="w-25">${h.programa}</td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 5">
+<title>13_Not_allowed_v15</title>
+<rect width="${h.valor}" height="5"
+    rx="2"
+fill="white" />
+</svg></td>
+                    </tr>`;
+});
+
+        </script>
+    </body>
+</html>
+
+
